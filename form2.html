@@ -1,257 +1,311 @@
-<!doctype html>
-<html>
-<title>Form </title>
-<head> </head>
-<style>
-@keyframes ani
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+    <style>
+        @keyframes ani
+        {
+        from{opacity:0;}
+        to{opacity:1;}
+        }
+        
+        
+        
+        
+        
+        #container
+        {
+        width:50%;
+        text-align:left;
+        margin:auto;
+        padding:5%;
+        font-size:15px;
+        border-radius:20px;
+        box-shadow:5px 5px 5px 5px gray;
+        background:white;
+        color:black;
+        background:url(image/pic.jpeg);
+        background-size:cover;
+        
+        }
+        
+        #container table
+        {
+        width:100%;
+        padding:5%;
+        }
+        
+        
+        
+        input[type="text"]{width:90%;height:30px;border-radius:8px; }
+        input[type="Number"]{width:90%;height:30px;border-radius:8px;}
+        input[type="submit"]{width:25%;height:30px;  font-size:15px;color:blue;border-radius:8px; font-family:verdana;background:white;}
+        input[type="reset"]{width:20%;height:30px;  font-size:15px;color:blue;margin:10px;border-radius:8px;font-family:verdana;background:white;}
+        input[type="radio"]{width:10%;height:20px;  font-size:30px;border-radius:8px;}
+        input[type="password" ]{width:90%;height:30px;border-radius:8px;}
+        input[type="call"]{width:90%;height:30px;border-radius:8px;}
+        input[type="email"]{width:90%;height:30px;border-radius:8px;}
+        
+        
+        
+        input:invalid{
+        border:blue solid 1px;
+        }
+        
+        input:focus{
+        border:blue solid 1px;
+        }
+caption
 {
-from{opacity:0;}
-to{opacity:1;}
+        font-size:40px; 
+        color:white;
 }
+        
+        label
+        {
+        font-size:20px;
+        
+        }
+        
+        
+        
+        body
+        {
+            background:url(image/pic.jpeg);
+        
+        background-size:100% 100%;
+        animation:ani 1s;
+        
+        
+        
+        
+        }
+        
+        textarea
+        {
+        width:90%;
+        }
+        
+        footer
+        {
+        margin-left:-6%;
+        padding:5%;
+        font-size:20px;
+        color:white;
+        }
+        
+        @media screen and (max-width:600px)
+        {
 
+            #container
+        {
+        width:80%;
+        text-align:left;
+        margin:auto;
+        padding:5%;
+        font-size:15px;
+        border-radius:20px;
+        box-shadow:5px 5px 5px 5px gray;
+        background:white;
+        color:black;
+        background:url(image/pic.jpeg);
+        background-size:cover;
+        
+        }
+        
+        #container table
+        {
+        width:100%;
+        padding:5%;
+        }
 
+        input[type="text"]{width:100%;height:20px;border-radius:8px;background:#f7dc6f;}
+        input[type="date"]{width:100%;height:30px;border-radius:8px;background:#f7dc6f;}
+        input[type="submit"]{width:35%;height:20px;  font-size:12px;color:blue;border-radius:8px; font-family:verdana;background:white;background:#f7dc6f;}
+        input[type="reset"]{width:35%;height:20px;  font-size:12px;color:blue;margin:10px;border-radius:8px;font-family:verdana;background:white;background:#f7dc6f;}
+        input[type="radio"]{width:8%;height:10px;  font-size:5px;border-radius:8px;background:#f7dc6f;}
+        input[type="password"]{width:100%;height:20px;border-radius:8px;background:#f7dc6f;}
+        input[type="call"]{width:100%;height:20px;border-radius:8px;background:#f7dc6f;}
+        input[type="email"]{width:100%;height:20px;border-radius:8px;background:#f7dc6f;}
+        
 
+        label
+        {
+        font-size:15px;
+        color:yellow;
+        
+        }
 
-
-#container
+        caption
 {
-width:50%;
-text-align:left;
-margin:auto;
-padding:5%;
-font-size:15px;
-border-radius:20px;
-box-shadow:5px 5px 5px 5px gray;
-background:white;
-color:black;
-background:url(image/pic.jpeg);
-background-size:cover;
-
-}
-
-#container table
-{
-width:100%;
-padding:5%;
-}
-
-
-
-input[type="text"]{width:90%;height:30px;border-radius:8px;}
-input[type="Number"]{width:90%;height:30px;border-radius:8px;}
-input[type="submit"]{width:25%;height:30px;  font-size:15px;color:blue;border-radius:8px; font-family:verdana;background:white;}
-input[type="reset"]{width:20%;height:30px;  font-size:15px;color:blue;margin:10px;border-radius:8px;font-family:verdana;background:white;}
-input[type="radio"]{width:10%;height:20px;  font-size:30px;border-radius:8px;}
-input[type="password" ]{width:90%;height:30px;border-radius:8px;}
-input[type="call"]{width:90%;height:30px;border-radius:8px;}
-input[type="email"]{width:90%;height:30px;border-radius:8px;}
-
-
-
-input:invalid{
-border:blue solid 1px;
-}
-
-input:focus{
-border:blue solid 1px;
-}
-
-label
-{
-font-size:20px;
-
-}
-
-
-
-body
-{
-    background:url(image/pic.jpeg);
-
-background-size:100% 100%;
-animation:ani 1s;
-
-
-
-
-}
-
-textarea
-{
-width:90%;
+        font-size:20px; 
+        color:white;
 }
 
 footer
-{
-margin-left:-6%;
-padding:5%;
-font-size:20px;
-}
+        {
+        margin-left:-6%;
+        padding:5%;
+        font-size:10px;
+        color:white;
+        }
 
-@media screen and (max-width:400px)
-{
+        textarea
+        {
+        width:90%;
+        background:#f7dc6f;
+        }
+        
+        select
 
-    footer
-{
-margin-left:-6%;
-padding:5%;
-font-size:10px;
-}
-    
-}
-
-
-
-
-</style>
+        {
+            background:#f7dc6f;
+        }
 
 
-
-
-
-
-
-<body>
-
-<form>
-<br/>
-<div id="container">
-<table cellpadding="10">
-<caption style="font-size:40px; color:white;"> <b>Registration Form</b></caption>
-<tr>
-    <div class input-box>
-<td><label>User Name </label></td>
-<td>
-<input type="text" title="Type your User name......." placeholder="Type user name.." required>
-</div>
-</td>
-
-<tr>
-<td><label> Father Name</label></td>
-<td>
-<input type="text" title="Type your Father name......." placeholder="Father name.." required>
-</td>
-
-<tr>
-<td><label>Mother Name </label></td>
-<td>
-<input type="text" title="Mother Name......." placeholder="Mother Name.." required>
-</td>
-
-<tr>
-<td><label>Mobile No. </label></td>
-<td>
-<input type="call" pattern="{0-9}" title="Enter your Mobile No........" placeholder="Enter your mobile number.." required>
-</td>
-
-<tr>
-<td><label>Age </label></td>
-<td>
-<input type="number" title="Mention your age...." placeholder="select"> 
-</td>
-</tr>
-
-<tr>
-<td><label>D.O.B </label></td>
-<td>
-<input type="date">  
-</td>
-</tr>
-
-
-<tr>
-<td><label>Email </label></td>
-<td>
-<input type="email">  
-</td>
-</tr>
-
-
-
-
-<tr>
-<td><label>Message</label></td>
-<td>
-<textarea placeholder="type messager here"></textarea>
-</td>
-</tr>
-
-
-<tr>
-<td><label>Gender</label></td>
-<td>
-Male<input type="radio" value="Male" name="gender">
-female<input type="radio" value="female" name="gender">
-other<input type="radio" value="other" name="gender">
-</td>
-</tr>
-
-<tr>
-<td><label>City</label></td>
-<td>
-<select>
-<option value="Delhi">Delhi</option>
-<option value="Delhi">Mumbai</option>
-<option value="Delhi">Jharkhand</option>
-<option value="Delhi">Chennai</option>
-<option value="Delhi">Tamil Nadu</option>
-<option value="Delhi">Madhya Pradesh</option>
-<option value="Delhi">Andhra Pradesh</option>
-<option value="Delhi">Benglore</option>
-</select>
-</td>
-</tr>
-
-<tr>
-<td><label>Create Password </label></td>
-<td>
-<input type="Password" title="Type your password......." placeholder="create strong password.." required>
-</td>
-</tr>
-
-
-<tr>
-<td><label>Confirm Password</label></td>
-<td>
-<input type="password" title="Confirm password........" placeholder="Confirm password.." required>
-</td>
-
-
-
-<tr>
-<td></td>
-<td>
-
-<input type="Submit" value="Submit"><input type="Reset">
-
-<footer>
-
-Already have an account?/ <a href="form.html">login</a> 
-
-</footer>
-
-
-
-</tr>
-
-
-
-
-</table>
-</form>
-
-
-
+           body{background:url(image/pic.jpeg);background:cover;}
+        
+            
+        }
+        
+        
+        
+        
+        </style>
+        
+        
+        
+        
+        
+        
+        
+        <body>
+        
+        <form>
+        <br/>
+        <div id="container">
+        <table cellpadding="10">
+        <caption > <b>Registration Form</b></caption>
+        <tr>
+            <div class input-box>
+        <td><label>User Name </label></td>
+        <td>
+        <input type="text" title="Type your User name......." placeholder="Type user name.." required>
+        </div>
+        </td>
+        
+        <tr>
+        <td><label> Father Name</label></td>
+        <td>
+        <input type="text" title="Type your Father name......." placeholder="Father name.." required>
+        </td>
+        
+        <tr>
+        <td><label>Mother Name </label></td>
+        <td>
+        <input type="text" title="Mother Name......." placeholder="Mother Name.." required>
+        </td>
+        
+        <tr>
+        <td><label>Mobile No. </label></td>
+        <td>
+        <input type="call" pattern="{0-9}" title="Enter your Mobile No........" placeholder="Enter your mobile number.." required>
+        </td>
+        
+        
+        
+        <tr>
+        <td><label>D.O.B </label></td>
+        <td>
+        <input type="date">  
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td><label>Email </label></td>
+        <td>
+        <input type="email">  
+        </td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+        <td><label>Message</label></td>
+        <td>
+        <textarea placeholder="type messager here"></textarea>
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td><label>Gender</label></td>
+        <td>
+        Male<input type="radio" value="Male" name="gender">
+        female<input type="radio" value="female" name="gender">
+        other<input type="radio" value="other" name="gender">
+        </td>
+        </tr>
+        
+        <tr>
+        <td><label>City</label></td>
+        <td>
+        <select>
+        <option value="Delhi">Delhi</option>
+        <option value="Delhi">Mumbai</option>
+        <option value="Delhi">Jharkhand</option>
+        <option value="Delhi">Chennai</option>
+        <option value="Delhi">Tamil Nadu</option>
+        <option value="Delhi">Madhya Pradesh</option>
+        <option value="Delhi">Andhra Pradesh</option>
+        <option value="Delhi">Benglore</option>
+        </select>
+        </td>
+        </tr>
+        
+        <tr>
+        <td><label>Create Password </label></td>
+        <td>
+        <input type="Password" title="Type your password......." placeholder="create strong password.." required>
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td><label>Confirm Password</label></td>
+        <td>
+        <input type="password" title="Confirm password........" placeholder="Confirm password.." required>
+        </td>
+        
+        
+        
+        <tr>
+        <td></td>
+        <td>
+        
+        <input type="Submit" value="Submit"><input type="Reset">
+        
+        <footer>
+        
+        Already have an account?/ <a href="form.html">login</a> 
+        
+        </footer>
+        
+        
+        
+        </tr>
+        
+        
+        
+        
+        </table>
+        </form>
+        
 </body>
-
-
-
-
-
-
-
-
-
-
-
 </html>
