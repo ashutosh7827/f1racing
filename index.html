@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<head>, initial-scale=1.0">
     <title>Formula 1 Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <link rel="icon" href="image/icon.png">
 <a name="top">
@@ -32,74 +33,7 @@ to{opacity:1;}
     }
 
     
-header
-{
-                                                                       
-  width:70%;
- margin-left:12%;
- //text-align:center;
-  font-size:25px;
-  padding:5px;
 
-//animation:ani2 1s;
-
-                                                                               
-                                                                         
- }
-
-header ol
-{
-padding:0px;
-}
-
-header ol li
-{
-list-style:none;
-padding:10px;
-cursor:pointer;
-display:inline;
-margin:1%;
-
-
-
-}
-
-
-header ol li:hover
-{
-//background:white;
-transform:scale(1.10);
-transition:0.5s;
-border-radius:60px;
-
-
-
-}
-
-header ol li a:link
-{
-color:white;
-text-decoration:none;
-font-size:20px;
-}
-
-header ol li a:visited
-{
-color:white;
-}
-
-header ol li a:hover
-{
-text-decoration:underline;
-color:red;
-
-}
-
-header ol li a:active
-{
-color: red;
-
-}
 
 span
 {
@@ -111,97 +45,30 @@ span
 {
 width:10%;
 position:absolute;
-background:white;
+
 padding:10px;
-top:1%;
-left:-.30%;
+top:-20%;
+left:90%;
 }
 
 .pic
 {
 width:100%;
-height:750px;
+height:700px;
 Padding:0px;
-
-}
-
-.button-container
-{
-
-display:inline;
-
-}
-
-button
-{
-    width:9%;
-    color:black;
-    position:absolute;
-    top:4%;
-right:1%;
-font-size:18px;
-background:white;
-margin:10px;
-border-radius:50px;
-font-family:arial black;
-
-
-
-}
-
-
-button2
-{
-    width:7%;
-
-    color:black;
-    position:absolute;
-    top:4.5%;
-right:11%;
-font-size:20px;
-background:white;
-margin:8px;
-text-align:center;
-font-family:arial black;
-border-radius:50px;
-}
-
-button2 a:link
-{
-    color:black;
-    text-decoration:none;
-}
-
-button2 a:visited
-{
-    color:black;
-    
-}
-
-button2 a:hover
-{
-    color:white;
-}
-
-button2:hover
-{
-cursor:pointer;
-transform:scale(1.15);
-transition:0.5s;
-background:black;
 
 }
 
 
 .box
 {
-width:20%;
+width:25%;
 border:1px solid white;
 border-radius:5px;
 margin-top:10px;
-//margin-left:5%;
+
 display:inline-block;
-margin:2%;
+margin:4%;
 background:white;
 overflow:hidden;
 
@@ -320,6 +187,18 @@ font-size:18px;
     width:100%;
 }
 
+.nav-link
+{
+    margin:20px;
+    color:white;
+
+}
+
+.nav-link:hover
+{
+    color:red;
+}
+
 
 
 
@@ -338,7 +217,7 @@ body{
    .pic
    {
     width:100%;
-    height:250px;
+    height:200px;
     padding:%;
    }
 
@@ -420,81 +299,25 @@ span
 
 .logo
 {
-width:10%;
+width:20%;
 position:absolute;
-background:white;
+
 padding:10px;
-top:0.5%;
+top:-30%;
 left:1%;
 }
 
-button
-{
-    width:14%;
-    color:black;
-    position:absolute;
-    top:1.2%;
-right:-0.1%;
-font-size:8px;
-background:white;
-margin:10px;
-border-radius:50px;
-font-family:arial black;
 
-
-
-}
-button2
-{
-    width:11%;
-
-    color:black;
-    position:absolute;
-    top:1.6%;
-right:17%;
-font-size:9px;
-background:white;
-margin:8px;
-text-align:center;
-font-family:arial black;
-border-radius:50px;
-}
-
-button2 a:link
-{
-    color:black;
-    text-decoration:none;
-}
-
-button2 a:visited
-{
-    color:black;
-    
-}
-
-button2 a:hover
-{
-    color:white;
-}
-
-button2:hover
-{
-cursor:pointer;
-transform:scale(1.15);
-transition:0.5s;
-background:black;
-
-}
 
 .box
 {
-width:35%;
+width:80%;
 border:1px solid white;
 border-radius:5px;
 margin-top:10px;
 
 display:inline-block;
-margin:6%;
+margin:10%;
 background:white;
 overflow:hidden;
 
@@ -523,14 +346,15 @@ width:100%;
 .name
 {
 text-align:center;
-font-size:10px;
+font-size:20px;
 padding:0px;
 }
 
 .price
 {
 text-align:justify;
-font-size:9px;
+font-size:15px;
+font-family: sans-serif;
 
 
 }
@@ -545,6 +369,7 @@ font-size:9px;
     font-size:verdana;
     padding:0px;
      font-size:12px;
+     font-family: sans-serif;
 }
 
 .jj
@@ -591,6 +416,10 @@ font-size:7px;
     margin-top:-18%;
     width:100%;
 }
+.navbar-toggler
+{
+    
+}
 
 
 
@@ -601,31 +430,54 @@ font-size:7px;
 
 </style>
 <body>
-    <div id="head">
-    <img class="logo" src="image/logo.png">
-    <header>
+   <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+  <div class="container-fluid">
     
-        <ol>
-        <li><a href="#About Racing">About<span>&#11206;</span></a></li>
+    <a class="navbar-brand" href="#"><img class="logo" src="image/logos.png"></a>
+
     
-        <li><a href="gallery.html">Gallery<span>&#11206;</span></a></li>
-        <li><a href="">Scheduals<span>&#11206;</span></a></li>
-        <li><a href="#F1 Unlocked">F1 Unlocked<span>&#11206;</span></a></li>
-        <li><a href="#F1 car Racing">F1 Car <span>&#11206;</span></a></li>
-        
-        </ol>
-        </header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav text-center  fs-4 w-100 text-light">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About Racing">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Scheduals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#F1 Unlocked">F1 Unlocked</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#F1 car Racing">F1 Car</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="form.html"><div style="color:red; ">Login</div></a>
+        </li>
+      </ul>
     </div>
-        <div class="button-container">
+  </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
             
             
             
-            <button> Subscribe</button>
-            <button2><a href="form.html"> Sign In</a></button2>
+           
+           
             
     
         </div>
-        <img class="pic" src="image/c4.jpg">
+        <div id="top-pic">
+        <img  class="pic" src="image/c5.jpg">
+        <h1></h1>
+        </div>
 
         <a name="F1 car Racing">
             
@@ -667,7 +519,7 @@ font-size:7px;
             </div>
             
             <div class="price">
-            <p>Toyota revealed the customer racing version of its long-awaited Supra as a concept last year, then confirmed it for production. Thanks to a lower suspension, racing slicks, and a massive wing out back, it looks even better than the road car.</p>
+            <p>Toyota revealed the customer racing version of its long-awaited Supra as a concept last year, then confirmed it for production. Thanks to a lower suspension, racing slicks, and a massive wing out back, it looks even better. than the road car.</p>
             
             
             
@@ -689,7 +541,7 @@ font-size:7px;
             </div>
             
             <div class="price">
-            <p>The season isn't quite over yet, but there's simply no way we can overlook Red Bull's extraordinary contender for 2023, even with six races left to run as we write. It's quite possible that we will look back in 20, 30, 40 years.</p>
+            <p>The season isn't quite over yet, but there's simply no way we can overlook Red Bull's extraordinary contender for 2023, even with six races left to run as we write. It's quite possible that we will look back in 20, 30, 40 years of the f1 cars</p>
             
             
             
@@ -764,46 +616,7 @@ font-size:7px;
             
             </div>
 
-            <div class="box">
-
-                <div class="image">
-                <img src="image/p7.jpg">
-                </div>
-                
-                <div class="name">
-                    <b>Mercedes W07 Hybrid</b>
-                
-                </div>
-                
-                <div class="price">
-                <p>Mercedes’s achievements during F1's second hybrid era are, quite frankly, extraordinary. They eclipse even the performance of Ferrari in that early-2000s blitz. While it might not have achieved the kind of single-season dominance as McLaren did with the MP4/4 in 1988, it's longevity of success that has really set . </p>
-                
-                
-                
-                </div>
-    
-                
-                
-                
-                </div>
-
-                <div class="box">
-
-                    <div class="image">
-                    <img src="image/p8.jpg">
-                    </div>
-                    
-                    <div class="name">
-                        <b>Alfa Romeo 158/9 Alfetta</b>
-                    
-                    </div>
-                    
-                    <div class="price">
-                    <p>The Alfa Romeo 158 was originally built in 1937, some 13 years before the birth of F1, for voiturette racing. In the years before World War Two, Alfa Romeo ran the car in several grands prix with a small, supercharged 1.5-litre straight-eight engine designed by Goiacchino Colombo – he of Ferrari V12 fame. And yet, r</p>
-                    
-                    
-                    
-                    </div>
+           
         
                     
                     
